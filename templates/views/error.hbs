@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>head}}
+</head>
+
+<body>
+    {{>navbar}}
+
+
+    <!-- main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 col-12 main_header_left " style="align-items:center">
+                        <figure class="fig">
+                            <img src="./images/6.jpg" style="height: 400px; width: 300px; filter:none" class="img-fluid" alt="">
+                        </figure>
+                        <p>Welcome to WeatherInfo</p>
+                        <h1>{{errorMsg}}</h1>   
+                        <a href="/"><button>Go to Home Page</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    {{>footer}}
+            
+</body>
+
+</html>

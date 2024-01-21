@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" name="" id="cityName" placeholder="Enter Your City Name" autocomplete="off">
+                        <input type="submit" value="Search" id="submitButton">
+                    </form>
+                </div>
+
+                <div class="temp_info">
+                    <div class="top_layer">
+                        <p>Tuesday</p>
+                        <p>22 January, 2024</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="searched_city">Get City</p>
+                        <div class="middle_layer data_hide">
+                            <p class=""><span id="temperature">0</span> <sup>o</sup>C</p>
+                            <p class="temp_icon"> <i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    {{>footer}}
+    <script src="js/main.js">
+    </script>
+</body>
+
+</html>
